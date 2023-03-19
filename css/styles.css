@@ -1,0 +1,229 @@
+/*ID's*/
+/*Title Section*/
+#title{
+    text-align: left;
+}
+
+/*Features Section*/
+#features{
+    position: relative;
+    /*z-index: 1; /*Features kısmı öne çıksın da telefon resmi içerde kalsın diye*/
+}
+
+/*Testimonial Section*/
+#testimonials{
+    background-color: #ef8172;
+}
+
+/*Press Section*/
+#press{
+    background-color: #ef8172;
+    padding: 3%;
+}
+
+/*Pricing Section*/
+#pricing{
+    padding: 100px;
+}
+
+/*Call to Action Section*/
+#cta{
+    padding: 7% 25%; /* 7% for top and bottom, 25% for left and right*/
+}
+
+/*Footer Section*/
+#footer{
+    background-color: #fff;
+    padding: 5% 15%;
+}
+
+/***********************************************************/
+
+/*Tag Selectors*/
+body{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6{ 
+    font-family: 'Montserrat'; 
+    font-weight: bold;
+}
+
+p{
+    color: #8f8f8f;
+    font-weight: 500;
+}
+
+em{
+    font-size: 1.5rem;
+}
+
+/***********************************************************/
+
+/*Class Selectors*/
+
+/*Refactoring*/
+/*For All Containers*/
+.container-fluid{
+    padding: 7% 15%; /*%7 for top, %7 for bottom, %15 for left and right*/
+}
+
+.colored-section{
+    background-color: #ff4c68;
+    color: #fff; /*same as color: white, also: color:#000 is black*/
+}
+
+.white-section{
+    background-color: #fff;
+}
+
+/***********************************************************/
+
+/*For Title Part*/
+.big-heading{
+    font-family: 'Montserrat', sans-serif;  
+    font-size: 3.5rem; /*Büyültmek için*/
+    line-height: 1.5; /*Daha fazla yer kaplasın diye*/
+    font-weight: 900; /*Kalınlaştırmak için*/
+}
+
+/*Navigation Bar*/
+.navbar-brand{
+    margin-left: 50px;
+    font-family: "Ubuntu";
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    margin-right: 50px;
+    /*padding: 0 20px; 0 for top and bottom, 18 for left and right*/
+}
+
+.nav-link{
+    font-size: 1.5rem;
+    font-family: 'Montserrat-Light';
+}
+
+/*Download Buttons*/
+.download-bottons{
+    /*margin:10% 10% 0% 0%; top-right-bottom-left*/
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+/*Title Image*/
+.title-image{
+    /*height: 800px; also OK*/
+    width: 50%;
+    transform: rotate(25deg);
+    margin-left: 20px;
+    position: absolute; /*Child of title-image-container*/
+}
+
+.title-image-container{
+    position: relative; /*Parent of title-image*/
+}
+
+@media (max-width: 1280px){ /*1280 px ve altı için*/
+
+    #title{
+        text-align: center;
+    }
+
+    .title-image{
+        position: static; /*Aşağının içine geçmesin*/
+        transform: rotate(0);
+        margin-top: 50px;
+    }
+}
+
+/***********************************************************/
+
+/*All Icons*/
+.fa-solid{
+    color: #ef8172;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.fa-solid:hover{
+    color: #ff4c68;
+}
+
+.features-title{
+    font-size: 1.5rem;
+}
+
+/***********************************************************/
+
+/*For Testimonials Part*/
+.testimonial-image{
+    width: 20%;
+    border-radius: 100%;
+    margin: 20px;
+}
+
+.press-logo{
+    width: 15%;
+    margin: 5px 20px 50px 20px; /*5px for top, 20px for right, 50px for bottom, 20px for left*/
+}
+
+.testimonial-text{
+    font-size: 3rem; /*Büyültmek için*/
+    line-height: 1.5; /*Daha fazla yer kaplasın diye*/
+}
+
+/***********************************************************/
+
+/*For Pricing Part*/
+.card{
+    height: 100%;
+}
+    
+.card-body button{
+    margin-bottom: 0;
+}
+  
+
+.sign-up-bottons{
+   width: 100%;
+}
+
+.pricing-column{
+    padding: 3% 2%; /* 3% for top and bottom, 2% for left and right*/
+}
+
+.price-text{
+    font-size: 3rem; /*Büyültmek için*/
+    line-height: 1.5; /*Daha fazla yer kaplasın diye*/
+}
+
+.section-heading{
+    font-size: 3rem; /*Büyültmek için*/
+}
+
+.card-heading{
+    font-size: 1.5rem;
+}
+
+/***********************************************************/
+
+/*For Call to Action Part*/
+.download-bottons-cta{
+    /*margin:10% 10% 0% 0%; top-right-bottom-left*/
+    margin: 50px 50px 20px 50px; /*50px for top, 50 px for left and right, 20px for bottom*/
+}
+
+.cta-heading{
+    font-size: 3rem; /*Büyültmek için*/
+    line-height: 1.5; /*Daha fazla yer kaplasın diye*/
+}
+
+/***********************************************************/
+
+/*For Footer Part*/
+.social-media{
+    margin: 20px 10px 20px 10px; /*20px for top and bottom, 10 px for left and right, */
+}
